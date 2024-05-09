@@ -82,8 +82,9 @@ padding: 2rem;
 margin-bottom: 1rem;
 }
 
-a{
+.links a{
     display: block;
+    text-decoration: none;
     margin-bottom: 1.5em;
     background-color: var(--Grey);
     color: var(--White);
@@ -97,12 +98,20 @@ a{
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
-a:hover{
+.links a:hover{
     background-color: var(--Green);
     color: var(--Off_Black);
     cursor: pointer;
 }
-
+.attribution {
+    color: var(--White);
+    font-size:30px;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    color:var(--Green);
+}
 
 
 @media only screen and (max-width:1000px)  {
@@ -112,6 +121,9 @@ a:hover{
     .links{
         padding-top:1rem;
         }
+    .attribution {
+        font-size: var(--paragraphe_font);
+    }
         
     
     

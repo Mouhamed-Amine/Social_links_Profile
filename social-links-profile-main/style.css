@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+/* ### Primary */
+--Green: hsl(75, 94%, 57%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark_Grey: hsl(0, 0%, 12%);
+--Off_Black: hsl(0, 0%, 8%);
+
+/* ### Font */
+
+--paragraphe_font:14px;
+--font-Family:"Inter";
+ 
+--w-400:400;
+--w-600:600;
+--w-700:700;
+
+}
+
+body{
+    background-color: var(--Off_Black);
+}
+img{
+    max-width: 100%;
+    overflow: hidden;
+    border-radius:50%;
+    background-size: cover;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+p,h2,span,li{
+    font-size: var(--paragraphe_font);
+    font-family: var(--font-Family);
+}
+
+.middle_content{
+    width:20%;
+    background-color: var(--Dark_Grey);
+    border-radius:30px;
+    margin: 7rem auto;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+    padding: 1em;
+    
+}
+
+.inside_content{
+    margin: auto;
+    text-align: center;
+}
+
+.profileBorder{ 
+    margin: auto;
+}
+
+.profileDescription span{
+font-size: 30px;
+color: var(--White);
+display: block;
+margin-top: 15px;
+}
+.profileDescription .address{
+    color: var(--Green);
+    font-size: 20px;
+    font-weight: var(--w-400);
+    margin-top: -15px;
+}
+.profileDescription p{
+    color: var(--White);
+    word-spacing: 5px;
+}
+.links{
+padding: 2rem;
+margin-bottom: 1rem;
+}
+
+a{
+    display: block;
+    margin-bottom: 1.5em;
+    background-color: var(--Grey);
+    color: var(--White);
+    padding: 1rem 1.2rem;
+    text-align: center;
+    font-family: var(--font-Family);
+    font-weight: var(--w-700);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+a:hover{
+    background-color: var(--Green);
+    color: var(--Off_Black);
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:1000px)  {
+    .middle_content{
+        width: auto;
+    }
+    .links{
+        padding-top:1rem;
+        }
+        
+    
+    
+}
